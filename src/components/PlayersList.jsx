@@ -2,7 +2,7 @@ import PlayerCard from './PlayerCard';
 
 const PlayersList = () => {
 	return (
-		<section className="max-w-6xl mx-auto">
+		<section className="max-w-6xl mx-auto pb-24">
 			<div className="flex items-center justify-between">
 				<h1 className="text-2xl font-bold">Available Players</h1>
 				<div>
