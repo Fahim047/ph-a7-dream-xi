@@ -1,5 +1,6 @@
 import Banner from './components/Banner';
 import Navbar from './components/Navbar';
+import NewsLetter from './components/NewsLetter';
 import PlayersList from './components/PlayersList';
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
 			<Navbar />
 			<Banner />
 			<PlayersList />
+			<NewsLetter />
 		</div>
 	);
 };
