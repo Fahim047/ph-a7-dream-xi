@@ -1,5 +1,3 @@
-import React from 'react';
-
 const NewsLetter = () => {
 	return (
 		<div className="-mb-[130px] max-w-6xl mx-auto my-6 p-4 rounded-xl border border-white/30 backdrop-blur-lg shadow-lg">

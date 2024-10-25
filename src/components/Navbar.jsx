@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({ balance }) => {
 	return (
 		<header className="max-w-6xl mx-auto flex items-center justify-between py-4">
 			<img className="w-16" src="/assets/logo.png" alt="a batsman is playing" />
@@ -10,7 +10,7 @@ const Navbar = () => {
 					<li>Schedules</li>
 				</ul>
 				<p className="border px-2 py-1 rounded min-w-24 text-center font-bold">
-					0 Coin 🪙
+					{balance} Coin 🪙
 				</p>
 			</nav>
 		</header>
