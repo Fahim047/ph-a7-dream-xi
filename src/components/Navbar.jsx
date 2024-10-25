@@ -3,7 +3,7 @@ const Navbar = () => {
 		<header className="max-w-6xl mx-auto flex items-center justify-between py-4">
 			<img className="w-16" src="/assets/logo.png" alt="a batsman is playing" />
 			<nav className="flex items-center gap-12">
-				<ul className="text-gray-500 flex items-center gap-12">
+				<ul className="hidden md:flex text-gray-500 items-center gap-12">
 					<li>Home</li>
 					<li>Fixture</li>
 					<li>Teams</li>
