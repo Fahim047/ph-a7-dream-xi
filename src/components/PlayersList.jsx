@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 import AvailablePlayers from './AvailablePlayers';
 import SelectedPlayers from './SelectedPlayers';
 const PlayersList = ({ playersData, balance, setBalance }) => {
@@ -10,18 +11,23 @@ const PlayersList = ({ playersData, balance, setBalance }) => {
 			: `Selected Players(${selectedPlayers.length}/6)`;
 
 	const handleSelectedPlayer = (player) => {
+		if (selectedPlayers.length === 6) {
+			toast.error('You can select maximum 6 players');
+			return;
+		}
 		const price = parseInt(player.biddingPrice);
 		if (balance < price) {
-			alert('Insufficient balance!');
+			toast.error('Insufficient balance!');
 			return;
 		}
 		const isExist = selectedPlayers.find((p) => p.id === player.id);
 		if (isExist) {
-			alert('Player already selected!');
+			toast.warning('Player already selected!');
 			return;
 		}
 		setSelectedPlayers([...selectedPlayers, player]);
 		setBalance(balance - price);
+		toast.success(`${player.name} has been added to your team!`);
 	};
 	return (
 		<section className="max-w-6xl mx-auto pb-24">
@@ -53,7 +59,7 @@ const PlayersList = ({ playersData, balance, setBalance }) => {
 					onSelect={handleSelectedPlayer}
 				/>
 			) : (
-				<SelectedPlayers playersData={selectedPlayers} />
+				<SelectedPlayers playersData={selectedPlayers} setActive={setActive} />
 			)}
 		</section>
 	);

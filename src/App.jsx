@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import NewsLetter from './components/NewsLetter';
 import PlayersList from './components/PlayersList';
-
 const App = () => {
 	const [credits, setCredits] = useState(10);
 	const [data, setData] = useState([]);
@@ -31,6 +32,7 @@ const App = () => {
 				<NewsLetter />
 				<Footer />
 			</div>
+			<ToastContainer position="top-center" autoClose={2000} />
 		</>
 	);
 };
