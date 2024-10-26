@@ -10,7 +10,7 @@ const Navbar = ({ balance }) => {
 					<li>Schedules</li>
 				</ul>
 				<p className="border px-2 py-1 rounded min-w-24 text-center font-bold">
-					{balance} Coin 🪙
+					{balance} M 🪙
 				</p>
 			</nav>
 		</header>

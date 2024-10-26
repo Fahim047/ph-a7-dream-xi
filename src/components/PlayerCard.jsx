@@ -1,8 +1,6 @@
-const PlayerCard = ({ player }) => {
-	// Sample player data
-
+const PlayerCard = ({ player, onSelect }) => {
 	return (
-		<div className="card p-4 bg-white rounded-xl shadow-lg overflow-hidden">
+		<div className="w-full p-4 bg-white rounded-xl shadow-lg overflow-hidden">
 			{/* Player Image */}
 			<figure className="mb-4">
 				<img
@@ -25,11 +23,12 @@ const PlayerCard = ({ player }) => {
 
 				{/* Role and Playing Style */}
 				<div className="space-y-2">
-					<div className="flex items-center space-x-2 text-gray-600">
-						<span>Batting: {player.battingStyle}</span>
+					<p className="text-gray-500">Category: {player.category}</p>
+					<div className="flex items-center space-x-2 text-gray-500">
+						<span>🏏 {player.battingStyle}</span>
 					</div>
-					<div className="flex items-center space-x-2 text-gray-600">
-						<span>Bowling: {player.bowlingStyle}</span>
+					<div className="flex items-center space-x-2 text-gray-500">
+						<span>🥎 {player.bowlingStyle}</span>
 					</div>
 				</div>
 
@@ -39,7 +38,10 @@ const PlayerCard = ({ player }) => {
 				</div>
 
 				{/* Choose Player Button */}
-				<button className="w-full py-2 px-4 bg-lime-400 text-black rounded-lg hover:bg-lime-500 transition duration-200 font-semibold">
+				<button
+					className="w-full py-2 px-4 bg-lime-400 text-black rounded-lg hover:bg-lime-500 transition duration-200 font-semibold"
+					onClick={() => onSelect(player)}
+				>
 					Choose Player
 				</button>
 			</div>

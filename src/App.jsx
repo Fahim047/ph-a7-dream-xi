@@ -6,16 +6,15 @@ import NewsLetter from './components/NewsLetter';
 import PlayersList from './components/PlayersList';
 
 const App = () => {
-	const [credits, setCredits] = useState(50000);
+	const [credits, setCredits] = useState(10);
 	const [data, setData] = useState([]);
-
 	useEffect(() => {
 		fetch('/fake-data.json')
 			.then((res) => res.json())
 			.then((data) => setData(data.players));
 	}, []);
 	const handleGetCredits = () => {
-		setCredits(credits + 1000);
+		setCredits(credits + 10);
 	};
 	return (
 		<>
