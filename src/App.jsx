@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
@@ -16,6 +16,7 @@ const App = () => {
 	}, []);
 	const handleGetCredits = () => {
 		setCredits(credits + 10);
+		toast.success('10 credits added!');
 	};
 	return (
 		<>
