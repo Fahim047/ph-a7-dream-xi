@@ -1,7 +1,7 @@
 import React from 'react';
 import Trash from '../icons/Trash';
 
-const SelectedPlayerCard = ({ player }) => {
+const SelectedPlayerCard = ({ player, handleDelete }) => {
 	return (
 		<div className="flex items-center gap-2 p-2 border rounded-xl">
 			<img
@@ -14,9 +14,12 @@ const SelectedPlayerCard = ({ player }) => {
 					<h2 className="font-bold text-xl">{player.name}</h2>
 					<p className="text-gray-500">{player.role}</p>
 				</div>
-				<div className="text-red-500">
+				<button
+					className="text-red-500"
+					onClick={() => handleDelete(player.id)}
+				>
 					<Trash />
-				</div>
+				</button>
 			</div>
 		</div>
 	);

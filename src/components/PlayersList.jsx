@@ -29,6 +29,11 @@ const PlayersList = ({ playersData, balance, setBalance }) => {
 		setBalance(balance - price);
 		toast.success(`${player.name} has been added to your team!`);
 	};
+	const handleDeletePlayer = (id) => {
+		const newPlayers = selectedPlayers.filter((player) => player.id !== id);
+		setSelectedPlayers(newPlayers);
+		toast.success('Player Removed from the list!');
+	};
 	return (
 		<section className="max-w-6xl mx-auto pb-24">
 			<div className="flex items-center justify-between">
@@ -59,7 +64,11 @@ const PlayersList = ({ playersData, balance, setBalance }) => {
 					onSelect={handleSelectedPlayer}
 				/>
 			) : (
-				<SelectedPlayers playersData={selectedPlayers} setActive={setActive} />
+				<SelectedPlayers
+					playersData={selectedPlayers}
+					setActive={setActive}
+					handleDelete={handleDeletePlayer}
+				/>
 			)}
 		</section>
 	);
