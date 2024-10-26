@@ -1,31 +1,25 @@
-const PlayerCard = () => {
+const PlayerCard = ({ player }) => {
 	// Sample player data
-	const player = {
-		name: 'Tanzim Sakib',
-		country: 'Bangladesh',
-		role: 'Bowler',
-		battingStyle: 'Right Handed',
-		bowlingStyle: 'Right-arm medium',
-		biddingPrice: '1.00 Cr',
-	};
 
 	return (
-		<div className="card bg-white rounded-xl shadow-lg overflow-hidden">
+		<div className="card p-4 bg-white rounded-xl shadow-lg overflow-hidden">
 			{/* Player Image */}
-			<figure>
-				<img src="https://api.bdcrictime.com/players/94960.png" alt="player" />
+			<figure className="mb-4">
+				<img
+					className="w-full h-[200px] object-fill rounded-xl"
+					src={player.imageUrl}
+					alt="player"
+				/>
 			</figure>
 
 			{/* Player Info */}
-			<div className="p-6 space-y-4">
+			<div className="space-y-4">
 				{/* Name and Country */}
 				<div className="space-y-2">
 					<h2 className="text-2xl font-bold text-gray-800">{player.name}</h2>
-					<div className="flex items-center justify-between space-x-2 text-gray-500">
-						<span>🏳️ {player.country}</span>
-						<span className="badge badge-lg border text-gray-500">
-							{player.role}
-						</span>
+					<div className="flex flex-wrap items-center justify-between space-x-2 text-gray-500">
+						<p>🏳️ {player.country}</p>
+						<p className="badge badge-lg border text-gray-500">{player.role}</p>
 					</div>
 				</div>
 

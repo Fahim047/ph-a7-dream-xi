@@ -1,6 +1,6 @@
 import PlayerCard from './PlayerCard';
 
-const PlayersList = () => {
+const PlayersList = ({ playersData }) => {
 	return (
 		<section className="max-w-6xl mx-auto pb-24">
 			<div className="flex items-center justify-between">
@@ -15,10 +15,9 @@ const PlayersList = () => {
 				</div>
 			</div>
 			<div className="my-6 grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-6">
-				<PlayerCard />
-				<PlayerCard />
-				<PlayerCard />
-				<PlayerCard />
+				{playersData.map((player) => (
+					<PlayerCard key={player.id} player={player} />
+				))}
 			</div>
 		</section>
 	);

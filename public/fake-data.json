@@ -1,0 +1,202 @@
+{
+	"players": [
+		{
+			"id": "BS74",
+			"name": "Ben Stokes",
+			"country": "England",
+			"imageUrl": "https://i.ibb.co.com/SssLSGN/60783660873ea9455711a937-Th-Ben-Stokes-Celebrates.jpg",
+			"role": "All-rounder",
+			"battingStyle": "Left Handed",
+			"bowlingStyle": "Right-arm fast-medium",
+			"biddingPrice": "16 M",
+			"category": "A+"
+		},
+		{
+			"id": "KW22",
+			"name": "Kane Williamson",
+			"country": "New Zealand",
+			"imageUrl": "https://i.ibb.co.com/6BLdwgD/383076-6.jpg",
+			"role": "Batsman",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm off break",
+			"biddingPrice": "14 M",
+			"category": "A+"
+		},
+		{
+			"id": "DJ23",
+			"name": "David Warner",
+			"country": "Australia",
+			"imageUrl": "https://i.ibb.co.com/1KLkF7P/Warner-new.webp",
+			"role": "Batsman",
+			"battingStyle": "Left Handed",
+			"bowlingStyle": "Right-arm leg break",
+			"biddingPrice": "6 M",
+			"category": "A"
+		},
+		{
+			"id": "SP25",
+			"name": "Steve Smith",
+			"country": "Australia",
+			"imageUrl": "https://i.ibb.co.com/bN2YmCZ/e12ygj7jzpb41.jpg",
+			"role": "Batsman",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm leg break",
+			"biddingPrice": "12 M",
+			"category": "A"
+		},
+		{
+			"id": "RK90",
+			"name": "Rashid Khan",
+			"country": "Afghanistan",
+			"imageUrl": "https://i.ibb.co.com/HGH29TT/Rashid-Khan-1719152768377-1719152768704.jpg",
+			"role": "All-rounder",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm leg break",
+			"biddingPrice": "15 M",
+			"category": "A+"
+		},
+		{
+			"id": "TS41",
+			"name": "Tanzim Hasan Sakib",
+			"country": "Bangladesh",
+			"imageUrl": "https://api.bdcrictime.com/players/94960.png",
+			"role": "Bowler",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm fast-medium",
+			"biddingPrice": "10 M",
+			"category": "B"
+		},
+		{
+			"id": "JL77",
+			"name": "Joe Root",
+			"country": "England",
+			"imageUrl": "https://i.ibb.co.com/56GfZVq/386836-6.jpg",
+			"role": "Batsman",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm off break",
+			"biddingPrice": "10 M",
+			"category": "A"
+		},
+		{
+			"id": "AF32",
+			"name": "Andre Russell",
+			"country": "West Indies",
+			"imageUrl": "https://i.ibb.co.com/7rsY5m0/andrerussell-cropped-1wvhzzo94ja9o1i0v3idj1zfpv.jpg",
+			"role": "All-rounder",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm fast",
+			"biddingPrice": "11 M",
+			"category": "A+"
+		},
+		{
+			"id": "KL77",
+			"name": "Kagiso Rabada",
+			"country": "South Africa",
+			"imageUrl": "https://crictoday.com/wp-content/uploads/2024/10/Rabada.webp",
+			"role": "Bowler",
+			"battingStyle": "Left Handed",
+			"bowlingStyle": "Right-arm fast",
+			"biddingPrice": "9 M",
+			"category": "A"
+		},
+		{
+			"id": "BM10",
+			"name": "Babar Azam",
+			"country": "Pakistan",
+			"imageUrl": "https://www.cricketcountry.com/wp-content/uploads/2024/02/Babar-Azam-1.jpg",
+			"role": "Batsman",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm off break",
+			"biddingPrice": "14 M",
+			"category": "A+"
+		},
+		{
+			"id": "MD99",
+			"name": "Mohammad Rizwan",
+			"country": "Pakistan",
+			"imageUrl": "https://i.ibb.co.com/p3wTZ8k/836076-82541642.jpg",
+			"role": "Wicket-keeper",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "N/A",
+			"biddingPrice": "11 M",
+			"category": "A"
+		},
+		{
+			"id": "DS01",
+			"name": "Dushmantha Chameera",
+			"country": "Sri Lanka",
+			"imageUrl": "https://i.ibb.co.com/dfKXSqR/375709.jpg",
+			"role": "Bowler",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm fast",
+			"biddingPrice": "6 M",
+			"category": "B"
+		},
+		{
+			"id": "PK33",
+			"name": "Paul Stirling",
+			"country": "Ireland",
+			"imageUrl": "https://api.bdcrictime.com/2606997-04_06_2024.jpg",
+			"role": "All-rounder",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm off break",
+			"biddingPrice": "5 M",
+			"category": "B"
+		},
+		{
+			"id": "KB88",
+			"name": "Karan KC",
+			"country": "Nepal",
+			"imageUrl": "https://i.ibb.co.com/hK4wGYk/393695160-732186115604438-3241618495166681614-n.jpg",
+			"role": "Bowler",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm fast-medium",
+			"biddingPrice": "3 M",
+			"category": "B"
+		},
+		{
+			"id": "MP33",
+			"name": "Mujeeb Ur Rahman",
+			"country": "Afghanistan",
+			"imageUrl": "https://www.ariananews.af/wp-content/uploads/2023/08/mujeeb1.jpg",
+			"role": "Bowler",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm off break",
+			"biddingPrice": "8 M",
+			"category": "A"
+		},
+		{
+			"id": "KA44",
+			"name": "Kusal Mendis",
+			"country": "Sri Lanka",
+			"imageUrl": "https://i.ibb.co.com/dkv2Fgw/XOw-ZZwgn-FPx-KD4-I5b-Kkn-Kq-BZG7ycsw-Gxu7-Uih6-VU.jpg",
+			"role": "Wicket-keeper",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm off break",
+			"biddingPrice": "7 M",
+			"category": "B"
+		},
+		{
+			"id": "SP89",
+			"name": "Sandeep Lamichhane",
+			"country": "Nepal",
+			"imageUrl": "https://api.bdcrictime.com/sandeep-lamichhane-17_06_2024.jpg",
+			"role": "Bowler",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm leg break",
+			"biddingPrice": "4 M",
+			"category": "B"
+		},
+		{
+			"id": "HC19",
+			"name": "Harry Tector",
+			"country": "Ireland",
+			"imageUrl": "https://i.ibb.co.com/0V94jN3/FX8qgvp-X0-AEw-My5.jpg",
+			"role": "Batsman",
+			"battingStyle": "Right Handed",
+			"bowlingStyle": "Right-arm off break",
+			"biddingPrice": "5 M",
+			"category": "B"
+		}
+	]
+}

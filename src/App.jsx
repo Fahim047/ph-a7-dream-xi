@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -7,6 +7,13 @@ import PlayersList from './components/PlayersList';
 
 const App = () => {
 	const [credits, setCredits] = useState(50000);
+	const [data, setData] = useState([]);
+
+	useEffect(() => {
+		fetch('/fake-data.json')
+			.then((res) => res.json())
+			.then((data) => setData(data.players));
+	}, []);
 	const handleGetCredits = () => {
 		setCredits(credits + 1000);
 	};
@@ -15,7 +22,7 @@ const App = () => {
 			<div className="px-2">
 				<Navbar balance={credits} />
 				<Banner onGetCredits={handleGetCredits} />
-				<PlayersList />
+				<PlayersList playersData={data} />
 			</div>
 			<div className="relative">
 				<NewsLetter />
