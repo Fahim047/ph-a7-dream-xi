@@ -4,9 +4,9 @@ const PlayerCard = ({ player, onSelect }) => {
 			{/* Player Image */}
 			<figure className="mb-4">
 				<img
-					className="w-full h-[200px] object-fill rounded-xl"
+					className="w-full h-[240px] object-cover rounded-xl"
 					src={player.imageUrl}
-					alt="player"
+					alt={player.name}
 				/>
 			</figure>
 
