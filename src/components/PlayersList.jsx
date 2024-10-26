@@ -1,17 +1,28 @@
 import { useState } from 'react';
 import AvailablePlayers from './AvailablePlayers';
 import SelectedPlayers from './SelectedPlayers';
-const PlayersList = ({ playersData }) => {
+const PlayersList = ({ playersData, balance, setBalance }) => {
 	const [active, setActive] = useState('available');
 	const [selectedPlayers, setSelectedPlayers] = useState([]);
 	const sectionTitle =
-		active === 'available' ? 'Available Players' : 'Selected Players';
+		active === 'available'
+			? 'Available Players'
+			: `Selected Players(${selectedPlayers.length}/6)`;
 
 	const handleSelectedPlayer = (player) => {
-		console.log('console from handleSelectedPlayer', player);
+		const price = parseInt(player.biddingPrice);
+		if (balance < price) {
+			alert('Insufficient balance!');
+			return;
+		}
+		const isExist = selectedPlayers.find((p) => p.id === player.id);
+		if (isExist) {
+			alert('Player already selected!');
+			return;
+		}
 		setSelectedPlayers([...selectedPlayers, player]);
+		setBalance(balance - price);
 	};
-	console.log(selectedPlayers);
 	return (
 		<section className="max-w-6xl mx-auto pb-24">
 			<div className="flex items-center justify-between">

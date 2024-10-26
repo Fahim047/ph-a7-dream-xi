@@ -5,8 +5,8 @@ const SelectedPlayerCard = ({ player }) => {
 	return (
 		<div className="flex items-center gap-2 p-2 border rounded-xl">
 			<img
-				src="https://i.ibb.co.com/p3wTZ8k/836076-82541642.jpg"
-				alt="rizwan"
+				src={player.imageUrl}
+				alt={player.name}
 				className="size-20 rounded-xl object-cover"
 			/>
 			<div className="flex flex-1 justify-between items-center">

@@ -21,7 +21,11 @@ const App = () => {
 			<div className="px-2">
 				<Navbar balance={credits} />
 				<Banner onGetCredits={handleGetCredits} />
-				<PlayersList playersData={data} />
+				<PlayersList
+					balance={credits}
+					setBalance={setCredits}
+					playersData={data}
+				/>
 			</div>
 			<div className="relative">
 				<NewsLetter />
